@@ -10,6 +10,6 @@ from . import models
 
 class HeroSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Hero
-        fields = __all__
+        model = models.Hero
+        fields = ('id', 'real_name', 'hero_name')
         
