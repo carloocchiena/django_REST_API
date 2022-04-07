@@ -5,6 +5,8 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register(r'heroes', views.HeroViewSet)
+router.register(r'villains', views.VillainViewSet)
+router.register(r'archenemies', views.ArchenemyViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

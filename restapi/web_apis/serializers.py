@@ -11,5 +11,19 @@ from . import models
 class HeroSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Hero
-        fields = ('id', 'real_name', 'hero_name')
+        fields = '__all__'
+        
+class VillainsSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = models.Villain
+        fields = '__all__'
+        
+class ArchenemySerializer(serializers.HyperlinkedModelSerializer):
+    id = serializers.IntegerField(read_only=True)
+    hero = serializers.StringRelatedField()
+    villain = serializers.StringRelatedField()
+    
+    class Meta:
+        model = models.Archenemy
+        fields = '__all__'
         
