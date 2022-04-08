@@ -1,9 +1,4 @@
-# django_REST_API
-WIP 
+# Django REST API
+DFR is just amazing.
 
-
-
-reading list:
-https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c
-https://www.django-rest-framework.org/
-https://www.django-rest-framework.org/api-guide/serializers/
+![image](https://user-images.githubusercontent.com/57464184/162272045-21348cf4-5e31-4f76-af43-2a715170e062.png)
