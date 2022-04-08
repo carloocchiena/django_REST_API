@@ -9,16 +9,25 @@ from rest_framework import serializers
 from . import models
 
 class HeroSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
     class Meta:
         model = models.Hero
         fields = '__all__'
         
 class VillainsSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
     class Meta:
         model = models.Villain
         fields = '__all__'
         
 class ArchenemySerializer(serializers.HyperlinkedModelSerializer):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
     id = serializers.IntegerField(read_only=True)
     hero = serializers.StringRelatedField()
     villain = serializers.StringRelatedField()
